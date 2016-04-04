@@ -1,19 +1,18 @@
-.row
-	#myCarousel.carousel.slide data-ride="carousel" 
-		ol.carousel-indicators
-			li data-target="#myCarousel" data-slide-to="0" class="active"
-			li data-target="#myCarousel" data-slide-to="1"
-			li data-target="#myCarousel" data-slide-to="2"
-		.carousel-inner  role="listbox"
-			.item.active
-				=image_tag("hinh1.jpg")
-			.item
-				=image_tag("hinh2.jpg")
-			.item
-				=image_tag("hinh3.jpg")
-		a.left.carousel-control data-slide="prev" href="#myCarousel" role="button" 
-		  span.glyphicon.glyphicon-chevron-left aria-hidden="true" 
-		  span.sr-only Previous
-		a.right.carousel-control data-slide="next" href="#myCarousel" role="button" 
-		  span.glyphicon.glyphicon-chevron-right aria-hidden="true" 
-		  span.sr-only Next
+#myCarousel.carousel.slide data-ride="carousel" 
+	ol.carousel-indicators
+		li data-target="#myCarousel" data-slide-to="0" class="active"
+		li data-target="#myCarousel" data-slide-to="1"
+		li data-target="#myCarousel" data-slide-to="2"
+	.carousel-inner  role="listbox"
+		.item.active
+			=image_tag("hinh1.jpg")
+		.item
+			=image_tag("hinh2.jpg")
+		.item
+			=image_tag("hinh3.jpg")
+	a.left.carousel-control data-slide="prev" href="#myCarousel" role="button" 
+	  span.glyphicon.glyphicon-chevron-left aria-hidden="true" 
+	  span.sr-only Previous
+	a.right.carousel-control data-slide="next" href="#myCarousel" role="button" 
+	  span.glyphicon.glyphicon-chevron-right aria-hidden="true" 
+	  span.sr-only Next
