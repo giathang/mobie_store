@@ -8,10 +8,12 @@ html
     = csrf_meta_tags
     =render 'shared/shim'
   body
-    #container
-  	 =render 'shared/header'
-     #body
+    =render 'shared/header'
+    #body
+      -flash.each do |key,value|
+        .alert class="alert-#{key}"
+          = value
       =yield
-     =render 'shared/footer'
+    =render 'shared/footer'
 
 
